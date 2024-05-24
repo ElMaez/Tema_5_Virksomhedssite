@@ -1,10 +1,22 @@
 /* This page is for global components and css variables */
+* {
+    padding: 0;
+    margin: 0;
+}
 
 :root {
     /* Colors */
+
+    /* text, iconer */
     --colorGreen: #B4F144;
+
+    /* */
     --colorDark: #000B11;
+
+    /* navigation og andre baggrunds elementer */
     --colorDarkGrey: #1C1E20;
+
+    /* diverse */
     --colorDarkGreen: #00472B;
 
     /* Font family */
@@ -12,6 +24,7 @@
     --paragrahptext: "Special Elite", system-ui;
 
     /* Font Size */
+    /*  Vi kan ikke finde enhedstypen i figma ergo skal disse størrelser ændres senere i processen. */
     --h1: 3.5em;
     --h2: 2.5em;
     --p: 1.5em;
