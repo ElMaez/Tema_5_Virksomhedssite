@@ -1,0 +1,45 @@
+/* This page is for global components and css variables */
+
+:root {
+    /* Colors */
+    --colorGreen: #B4F144;
+    --colorDark: #000B11;
+    --colorDarkGrey: #1C1E20;
+    --colorDarkGreen: #00472B;
+
+    /* Font family */
+    --overskrifter: "Road Rage", sans-serif;
+    --paragrahptext: "Special Elite", system-ui;
+
+    /* Font Size */
+    --h1: 3.5em;
+    --h2: 2.5em;
+    --p: 1.5em;
+
+    /* Font Weight */
+    --regular: 400;
+    --bold: 800;
+
+
+    /* background picture */
+    --backgroundpicture: url();
+}
+
+/* Global usage of css variables */
+h1 {
+    font-family: var(--overskrifter);
+    font-size: var(--h1);
+    font-weight: var(--regular);
+}
+
+h2 {
+    font-family: var(--overskrifter);
+    font-size: var(--h2);
+}
+
+p {
+    font-family: var(--paragrahptext);
+    font-size: var(--p);
+}
+
+/* Global components */
