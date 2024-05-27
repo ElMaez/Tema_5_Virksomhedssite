@@ -33,8 +33,10 @@
   --regular: 400;
   --bold: 800;
 
+
   /* BACKGROUND PICTURE */
-  --backgroundpicture: url();
+  --backgroundpicture: url(/assets/video/AdobeStock_726300964.mov);
+  --backgroundfilter: rgb(180, 241, 68, 60%);
 }
 
 /* GLOBAL CSS VAR USAGE */

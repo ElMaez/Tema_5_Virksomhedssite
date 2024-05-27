@@ -1,5 +1,9 @@
 @import url(/css/global.css);
-
+* {
+  padding: 0;
+  margin: 0;
+  /* outline: dashed 1px red; */
+}
 #bgvideo {
   position: fixed;
   right: 0;
@@ -8,7 +12,6 @@
   min-height: 100%;
   object-fit: cover;
   z-index: -1;
-  background-color: #b4f144;
 }
 .bgfilter {
   position: absolute;
@@ -16,8 +19,75 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: #b4f144;
+  background-color: var(--colorGreen);
   opacity: 16%;
   z-index: 0;
 }
+#diagonalcontainer {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.diagonalsectiontop {
+  width: 100%;
+  background-color: var(--colorDarkGreen);
+  opacity: 70%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  clip-path: polygon(10% 0, 32% 58%, 22% 68%, 0 12%, 0 0);
 
+  /*   position: absolute;
+  width: 853.932px;
+  height: 180px;
+  transform: rotate(-122.547deg);
+  flex-shrink: 0;
+  background-color: var(--colorDarkGrey);
+  opacity: 50%; */
+}
+.diagonalsection {
+  width: 100%;
+  background-color: var(--colorDarkGreen);
+  opacity: 70%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  clip-path: polygon(90% 0, 100% 0, 100% 10%, 10% 100%, 0 100%, 0 90%);
+
+  /*   position: absolute;
+  top: 50%;
+  right: 20%;
+  width: 1600px;
+  height: 160px;
+  transform: rotate(-32.55deg);
+  flex-shrink: 0;
+  background-color: var(--colorDarkGrey);
+  opacity: 50%; */
+}
+.diagonalsectionbottom {
+  width: 100%;
+  background-color: var(--colorDarkGreen);
+  opacity: 70%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  clip-path: polygon(77% 33%, 100% 89%, 100% 100%, 90% 100%, 67% 43%);
+
+  /*  position: absolute;
+  top: 0%;
+  left: 65%;
+  width: 773.567px;
+  height: 180px;
+  transform: rotate(-122.565deg);
+  flex-shrink: 0;
+  background-color: var(--colorDarkGrey);
+  opacity: 50%; */
+}
+#cartimg {
+    width: 7%;
+    translate: 170% 200%;
+}
+footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
