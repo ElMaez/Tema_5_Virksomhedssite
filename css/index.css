@@ -1,4 +1,41 @@
 @import url(/css/global.css);
-main {
-    background-image: url();
+
+
+.page-index {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    & > * {
+        grid-area: 1 / 1;
+    }
+
+    video {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .text {
+        z-index: 3;
+        place-self: center;
+    }
+    .video-zoomie {
+        animation: zoomie 3s infinite alternate running linear;
+        transform-origin: center;
+    }
+}
+
+@keyframes zoomie {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 0.02;
+    }
 }
