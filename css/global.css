@@ -1,58 +1,60 @@
 /* This page is for global components and css variables */
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
-    /* Colors */
+  /* Colors */
 
-    /* text, iconer */
-    --colorGreen: #B4F144;
+  /* text, iconer */
+  --colorGreen: #b4f144;
 
-    /* */
-    --colorDark: #000B11;
+  /* */
+  --colorDark: #000b11;
 
-    /* navigation og andre baggrunds elementer */
-    --colorDarkGrey: #1C1E20;
+  /* navigation og andre baggrunds elementer */
+  --colorDarkGrey: #1c1e20;
 
-    /* Diverse */
-    --colorDarkGreen: #00472B;
+  /* Diverse */
+  --colorDarkGreen: #00472b;
 
-    /* Font family */
-    --overskrifter: "Road Rage", sans-serif;
-    --paragrahptext: "Special Elite", system-ui;
+  /* Font family */
+  --overskrifter: "Road Rage", sans-serif;
+  --paragrahptext: "Special Elite", system-ui;
 
-    /* Font Size */
-    /*  Vi kan ikke finde enhedstypen i figma ergo skal disse størrelser ændres senere i processen. */
-    --h1: 3.5em;
-    --h2: 2.5em;
-    --p: 1.5em;
+  /* Font Size */
+  /*  Vi kan ikke finde enhedstypen i figma ergo skal disse størrelser ændres senere i processen. */
+  --h1: 3.5em;
+  --h2: 2.5em;
+  --p: 1.5em;
 
-    /* Font Weight */
-    --regular: 400;
-    --bold: 800;
+  /* Font Weight */
+  --regular: 400;
+  --bold: 800;
 
-
-    /* BACKGROUND PICTURE */
-    --backgroundpicture: url();
+  /* BACKGROUND PICTURE */
+  --backgroundpicture: url();
 }
 
 /* GLOBAL CSS VAR USAGE */
 h1 {
-    font-family: var(--overskrifter);
-    font-size: var(--h1);
-    font-weight: var(--regular);
+  font-family: var(--overskrifter);
+  font-size: var(--h1);
+  font-weight: var(--regular);
+  color: var(--colorGreen);
 }
 
 h2 {
-    font-family: var(--overskrifter);
-    font-size: var(--h2);
+  font-family: var(--overskrifter);
+  font-size: var(--h2);
+  color: var(--colorGreen);
 }
 
 p {
-    font-family: var(--paragrahptext);
-    font-size: var(--p);
+  font-family: var(--paragrahptext);
+  font-size: var(--p);
+  color: var(--colorGreen);
 }
 
 /* GLOBAL COMPONENT */
