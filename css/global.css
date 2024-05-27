@@ -34,11 +34,11 @@
     --bold: 800;
 
 
-    /* background picture */
+    /* BACKGROUND PICTURE */
     --backgroundpicture: url();
 }
 
-/* Global usage of css variables */
+/* GLOBAL CSS VAR USAGE */
 h1 {
     font-family: var(--overskrifter);
     font-size: var(--h1);
@@ -55,4 +55,4 @@ p {
     font-size: var(--p);
 }
 
-/* Global components */
+/* GLOBAL COMPONENT */
