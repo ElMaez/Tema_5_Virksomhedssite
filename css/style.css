@@ -1,4 +1,7 @@
 /* Projects page testing    https://bennettfeely.com/clippy/*/
+@import url(/css/global.css);
+
+
 * {
     /* outline: dashed 1px red; */
 }
@@ -12,7 +15,7 @@
 }
 
 #video1 {
-    background-color: aqua;
+    background-color: var(--colorGreen);
     clip-path: polygon(0 0, 0% 100%, 100% 0);
 
     grid-column: 1/7;
@@ -38,7 +41,7 @@
 }
 
 #video2 {
-    background-color: aquamarine;
+    background-color: var(--colorGreen);
 
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 24%);
 
