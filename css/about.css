@@ -28,11 +28,46 @@
   bottom: 0;
 }
 
+/* PLACERING AF H1'ERE */
+
 .what {
 }
 
 .contact {
 }
+
+/* .cloud {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.cloud h1,
+.cloud h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cloud a {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.cloud a:hover {
+  transform: scale(1.2);
+}
+.yak {
+  top: 10%;
+  left: 60%;
+}
+.his {
+  top: 20%;
+  left: 30%; */
+
 
 /* HEADER */
 
