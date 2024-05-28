@@ -9,16 +9,20 @@
 
 /* Projects side */
 
-#test {
+#container {
     width: 100%;
     height: 100vh;
+
+    overflow: hidden;
+
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
 }
 
+
+/* Project 1 */
 #video1 {
-    background-color: var(--colorGreen);
     clip-path: polygon(0 0, 0% 100%, 100% 0);
 
     grid-column: 1/7;
@@ -29,6 +33,14 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
+
+
+#video1 video {
+    width: 100%;
+
+    transform: rotateY(180deg);
+}
+
 
 .item_1 {
     grid-column: 3/4;
@@ -43,6 +55,7 @@
     grid-row: 1/-1;
 }
 
+/* Project 2 */
 #video2 {
     background-color: var(--colorGreen);
 
@@ -51,34 +64,84 @@
     grid-column: 4/-1;
     grid-row: 1/7;
     z-index: 4;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 
+#video2 video {
+    width: 100%;
+
+    position: relative;
+    top: -20%;
+}
+
+
+/* Project 3 */
 #video3 {
-    background-color: rgb(162, 185, 185);
 
     clip-path: polygon(52% 10%, 100% 100%, 0 100%, 0 33%);
 
     grid-column: 1/5;
     grid-row: 4/-1;
     z-index: 3;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 
-#video4 {
-    background-color: rgb(34, 172, 172);
-
+#video3 video {
+    width: 100%;
     grid-column: 1/-1;
     grid-row: 1/-1;
-    z-index: 1;
 }
 
+/* Project4 */
+
+#video4 {
+
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+
+/* Project 5 */
 #video5 {
-    background-color: rgb(26, 116, 116);
 
     clip-path: polygon(100% 33%, 100% 100%, 0 100%, 50% 16%);
 
     grid-column: 8/-1;
     grid-row: 4/-1;
     z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 
-/* Projects side */
+/* Hover */
+#video1:hover,
+#video2:hover,
+#video3:hover,
+#video4:hover,
+#video5:hover {
+    z-index: 5;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.videohover:hover {
+    width: 20%;
+    z-index: 6;
+}
+
+#video4 .videohover:hover,
+#video5 .videohover:hover {
+    width: 100%;
+    z-index: 6;
+}
