@@ -1,5 +1,28 @@
 @import url(/css/global.css);
 
+p.box {
+  padding: 20px; /* Padding inside the box */
+  width: 600px;
+  height: auto;
+  max-height: calc(1.2em * 12);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 1000;
+  line-height: 1.2em;
+}
+
+.founders {
+  width: 25%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 27%;
+}
+
 #bgvideo {
   position: fixed;
   right: 0;
@@ -28,13 +51,15 @@
   bottom: 0;
 }
 
+/* KONTAKTFORMULAR */
+
 .contact-form-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-150%, -20%);
   padding: 20px;
-  display: none; /* Initially hide the form */
+  display: none;
 }
 .contact-form {
   width: 300px;
@@ -47,7 +72,9 @@
 
 label {
   display: block;
-  font-weight: bold;
+  font-family: var(--paragrahptext);
+  font-size: var(--p);
+  color: var(--colorGreen);
 }
 
 input[type="text"],
@@ -60,7 +87,7 @@ textarea {
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #1c1e20;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -97,7 +124,7 @@ button:hover {
 }
 
 .what {
-  top: 20%;
+  top: 10%;
   left: 5%;
 }
 
