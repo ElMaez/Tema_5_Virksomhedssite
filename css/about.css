@@ -28,6 +28,49 @@
   bottom: 0;
 }
 
+.contact-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -20%);
+  padding: 20px;
+  display: none; /* Initially hide the form */
+}
+.contact-form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 /* PLACERING AF H1'ERE */
 
 .cloud {
@@ -38,50 +81,30 @@
   margin: 0;
   overflow: hidden;
 }
+
 .tag-cloud {
   position: relative;
   width: 100%;
   height: 100%;
 }
+
 .tag {
   position: absolute;
 }
+
 .tag:hover {
   color: #ff0000;
 }
+
 .what {
   top: 20%;
   left: 5%;
 }
+
 .contact {
   top: 65%;
   left: 60%;
 }
-
-/* .cloud {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-}
-.cloud a {
-  position: absolute;
-  display: block;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-.cloud a:hover {
-  transform: scale(1.2);
-}
-.yak {
-  top: 10%;
-  left: 60%;
-}
-.his {
-  top: 20%;
-  left: 30%; */
 
 /* HEADER */
 
@@ -93,6 +116,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
 }
 
 #vertikal {
@@ -120,4 +144,5 @@ header {
   padding: 16px;
   text-align: right;
   text-decoration: none;
+  z-index: 1001;
 }

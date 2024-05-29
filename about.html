@@ -31,10 +31,35 @@
       <div class="tag-cloud">
         <h1 class="tag what">WHAT IS SEWERHEAD?</h1>
         <h1 class="tag contact">CONTACT US</h1>
+
+        <div class="popup" style="display: none;">
+          <p>SEWERHEAD IS A MULTIMEDIA PROJECT FOUNDED BY SASHA BLOOR AND THOMAS BEDER. IT AIMS TO COMPETE WITH THE TRENDS OF THE DIGITAL WORLD OF TODAY, THROUGH DISTINCTIVE VISUAL CONTENT THAT AT SURFACE LEVEL WOULDNT BE CONSIDERED TO HOLD ANY COMMERCIAL VALUE. MOVING FORWARD OUR MOTTO IS; "LESS SERIOUSNESS, MORE FUN."
+            EARLY TALKS OF A CONCEPT DATES BACK TO NEW YORK CITY IN 2017, BUT THE IDEA CAME TO LIFE IN COPENHAGEN IN 2022. 
+            SASHA HAS A BACKGROUND IN FASHION AND BUSINESS AND THOMAS HAS A BACKGROUND IN FILM AND TELEVISION.</p>
+          <img src="founders.jpg" alt="Sewerhead">
+        </div>
+
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
       </div>
     </main>
     <footer>
       <img class="sewer" src="assets/img/Logo.png" alt="Logo" />
     </footer>
+    <script src="javascript/aboutjs.js"></script>
   </body>
 </html>
