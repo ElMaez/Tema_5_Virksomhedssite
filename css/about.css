@@ -19,7 +19,7 @@ p.box {
   height: auto;
   display: block;
   position: absolute;
-  top: 27%;
+  top: 25%;
   left: 27%;
 }
 
@@ -122,7 +122,7 @@ button:hover {
 }
 
 .what {
-  top: 20%;
+  top: 10%;
   left: 5%;
 }
 
