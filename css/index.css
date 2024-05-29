@@ -38,7 +38,7 @@
         place-self: center;
     }
     .video-zoomie {
-        animation: zoomie 3s infinite alternate running linear;
+        animation: zoomie 10s infinite alternate running linear;
         transform-origin: center;
     }
 }
@@ -48,6 +48,6 @@
         scale: 1;
     }
     to {
-        scale: 0.02;
+        scale: 0.2;
     }
 }
