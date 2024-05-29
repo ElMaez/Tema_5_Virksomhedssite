@@ -72,7 +72,9 @@ p.box {
 
 label {
   display: block;
-  font-weight: bold;
+  font-family: var(--paragrahptext);
+  font-size: var(--p);
+  color: var(--colorGreen);
 }
 
 input[type="text"],
@@ -85,7 +87,7 @@ textarea {
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #1c1e20;
   color: #fff;
   border: none;
   border-radius: 5px;
