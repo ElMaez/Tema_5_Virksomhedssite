@@ -122,7 +122,7 @@
 }
 
 #item4_1 {
-  grid-column: 3/4;
+  grid-column: 3/5;
   grid-row: 4/5;
   z-index: 1;
 
@@ -147,7 +147,7 @@
 }
 
 #item5_1 {
-  grid-column: 4/6;
+  grid-column: 3/6;
   grid-row: 5/6;
   z-index: 1;
 
