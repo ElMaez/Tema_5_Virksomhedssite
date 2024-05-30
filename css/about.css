@@ -82,6 +82,8 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--colorDarkGrey);
+  background-color: var(--colorDarkGrey);
+  color: var(--colorGreen);
   border-radius: 5px;
 }
 
